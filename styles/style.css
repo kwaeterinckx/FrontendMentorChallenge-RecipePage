@@ -1,0 +1,158 @@
+/* Initial setup */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+/* Custom styling */
+html {
+    font-size: var(--fs-html);
+}
+
+body {
+    background-color: var(--clr-eggshell);
+    font-family: var(--ff-outfit);
+    color: var(--clr-wenge-brown);
+    line-height: 1.5;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    max-width: 736px;
+    margin-inline: auto;
+
+    background-color: var(--clr-white);
+}
+
+/* Utility classes */
+.hr {
+    margin-inline: 2rem;
+    height: 0;
+    border: 0;
+    border-bottom: 1px solid var(--clr-light-grey);
+}
+
+.recipe__section {
+    margin-inline: 2rem;
+}
+
+.section__title {
+    font-family: var(--ff-young-serif);
+    font-size: var(--fs-section-title);
+    font-weight: 400;
+    line-height: 1;
+    color: var(--clr-nutmeg);
+    margin-bottom: .75em;
+}
+
+.ulist__list {
+    margin-left: calc(0.5rem + 6px);
+}
+
+.ulist__item {
+    padding-left: calc(2rem - 6px);
+    margin-top: .5rem;
+}
+
+.ulist__item::marker {
+    content: "\2022";
+    font-weight: 700;
+    color: var(--clr-nutmeg);
+}
+
+:is(.ulist__item, .olist__item) span {
+    font-weight: 700;
+}
+
+.olist__list {
+    margin-left: calc(0.5rem + 17px);
+}
+
+.olist__item {
+    padding-left: calc(2rem - 17px);
+    margin-top: .5rem;
+}
+
+.olist__item::marker {
+    font-weight: 700;
+    color: var(--clr-nutmeg);
+}
+
+/* Image */
+
+/* Header */
+.header__title {
+    font-family: var(--ff-young-serif);
+    font-size: var(--fs-header-title);
+    font-weight: 400;
+    line-height: 1;
+    color: var(--clr-dark-charcoal);
+}
+
+/* Introduction */
+
+/* Preparation time */
+.recipe__section--prep-time {
+    background-color: var(--clr-rose-white);
+    border-radius: .75rem;
+    padding: 1.5rem;
+}
+
+.section__title--prep-time {
+    font-family: var(--ff-outfit);
+    font-size: var(--fs-prep-time-title);
+    font-variation-settings: "wght" 600;
+}
+
+/* Nutrition */
+.table {
+    width: 100%;
+    margin-block: 1rem 2rem;
+    border-collapse: collapse;
+}
+
+.table__row {
+    border-bottom: 1px solid var(--clr-light-grey);
+}
+
+.table__row:last-of-type {
+    border-bottom: 0;
+}
+
+.table__div {
+    width: 50%;
+    line-height: 3rem;
+}
+
+.table__div--label {
+    padding-left: 2rem;
+}
+
+.table__div--value {
+    padding-right: 2rem;
+    font-weight: 700;
+    color: var(--clr-nutmeg)
+}
+
+/* Footer */
+.attribution {
+    font-size: .75rem;
+    line-height: 7.625rem;
+    text-align: center;
+    color: var(--clr-dark-charcoal);
+}
+
+.attribution a {
+    color: var(--clr-nutmeg);
+}

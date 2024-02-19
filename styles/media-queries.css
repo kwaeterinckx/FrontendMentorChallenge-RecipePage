@@ -1,0 +1,12 @@
+@media (width >=calc(736px + 4rem)) {
+    main {
+        margin-top: 7.625rem;
+        border-radius: 1.5rem;
+        box-shadow: .25rem .25rem 1rem rgba(0 0 0 / 0.1);
+    }
+
+    .header__img {
+        margin: 2rem 2rem 0;
+        border-radius: .75rem;
+    }
+}
