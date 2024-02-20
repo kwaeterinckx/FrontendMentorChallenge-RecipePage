@@ -54,7 +54,7 @@ And I'm proud of my *clean* code that resulted of my several attempts 🦚
 
 ## Author
 
-Kévine Waeterinckx
+Kévin Waeterinckx
 
 - Frontend Mentor - [@kwaeterinckx](https://www.frontendmentor.io/profile/kwaeterinckx)
 - GitHub - [kwaeterinckx](https://github.com/kwaeterinckx)
